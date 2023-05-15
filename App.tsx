@@ -1,11 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, StatusBar } from 'react-native';
+import SignIn from './src/pages/SignIn'
+import Colors from './src/constants/Colors';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar  backgroundColor={Colors.light.background} barStyle="dark-content" translucent={false}/>
+      <SignIn />
     </View>
   );
 }
@@ -13,7 +14,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.light.background,
     alignItems: 'center',
     justifyContent: 'center',
   },
