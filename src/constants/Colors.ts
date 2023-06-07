@@ -1,8 +1,10 @@
 export default {
   light: {
     text: '#212529',
-    textDetail: '#ADB5BD',
+    textDetail: '#778088',
     background: '#F8F9FA',
-    detail: '#1789FB'
+    line: '#ADB5BD',
+    detail: '#1789FB',
+    alert: '#F13764'
   },
 };
